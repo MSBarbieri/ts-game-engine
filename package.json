@@ -1,6 +1,6 @@
 {
   "name": "@msbarbieri/ts-game-engine",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "![npm-publish](https://github.com/MSBarbieri/ts-game-engine/workflows/npm-publish/badge.svg)",
   "repository": {
     "type": "git",
@@ -10,14 +10,17 @@
     "url": "https://github.com/MSBarbieri/ts-game-engine/issues"
   },
   "homepage": "https://github.com/MSBarbieri/ts-game-engine#readme",
-  "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "start": "node src/entry.ts",
     "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
     "build": "tsc",
-    "prod": "npm run build && node dist/entry.js"
+    "prod": "npm run build && node dist/entry.js",
+    "prepublish": "tsc"
   },
+  
+  "main": "dist/entry.js",
+  "types": "dist/entry.d.js",
   "author": "MSBarbieri",
   "license": "ISC",
   "dependencies": {
