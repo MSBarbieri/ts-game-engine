@@ -2,15 +2,21 @@
   "name": "@msbarbieri/ts-game-engine",
   "version": "0.1.1",
   "description": "![npm-publish](https://github.com/MSBarbieri/ts-game-engine/workflows/npm-publish/badge.svg)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSBarbieri/ts-game-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MSBarbieri/ts-game-engine/issues"
+  },
+  "homepage": "https://github.com/MSBarbieri/ts-game-engine#readme",
+  "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "start": "node src/entry.ts",
     "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
     "build": "tsc",
     "prod": "npm run build && node dist/entry.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MSBarbieri/ts-game-engine.git"
   },
   "author": "MSBarbieri",
   "license": "ISC",
@@ -18,11 +24,5 @@
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
-  },
-  "bugs": {
-    "url": "https://github.com/MSBarbieri/ts-game-engine/issues"
-  },
-  "homepage": "https://github.com/MSBarbieri/ts-game-engine#readme",
-  "main": "index.js",
-  "devDependencies": {}
+  }
 }
