@@ -6,7 +6,12 @@
     "start": "node src/entry.ts",
     "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
     "build": "tsc",
-    "prod": "npm run build && node dist/entry.js"
+    "prod": "npm run build && node dist/entry.js",
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSBarbieri/ts-game-engin.git"
   },
   "author": "MSBarbieri",
   "license": "ISC",
