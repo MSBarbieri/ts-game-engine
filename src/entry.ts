@@ -1,1 +1,6 @@
-console.log('hello world');
+export class Component {
+
+    constructor() {
+    }
+    public start():void {}
+}
