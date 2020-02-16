@@ -1,6 +1,6 @@
 {
   "name": "@msbarbieri/ts-game-engine",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "![npm-publish](https://github.com/MSBarbieri/ts-game-engine/workflows/npm-publish/badge.svg)",
   "repository": {
     "type": "git",
